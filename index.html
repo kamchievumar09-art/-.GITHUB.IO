@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Природа</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:80px;
+    margin-bottom:20px;
+    text-shadow:3px 3px 10px black;
+}
+
+header p{
+    font-size:24px;
+    max-width:800px;
+    line-height:1.8;
+}
+
+/* SECTION */
+
+.section{
+    width:90%;
+    margin:auto;
+    padding:80px 0;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:25px;
+    backdrop-filter:blur(5px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.15);
+}
+
+.card h2{
+    font-size:35px;
+    margin-bottom:20px;
+    color:#7CFC00;
+}
+
+.card p{
+    font-size:19px;
+    line-height:1.8;
+}
+
+/* QUOTE */
+
+.quote{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.quote h2{
+    font-size:45px;
+    color:#90EE90;
+    margin-bottom:20px;
+}
+
+.quote p{
+    font-size:28px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+    background:rgba(0,0,0,0.3);
+    text-align:center;
+    padding:30px;
+    font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Природа</h1>
+        <p>
+            Природа — бул биздин жашообуздун булагы.
+            Тоолор, токойлор, дарыялар жана таза аба
+            адамга күч жана тынчтык тартуулайт.
+        </p>
+    </div>
+</header>
+
+<section class="section">
+
+    <div class="card-container">
+
+        <div class="card">
+            <h2>Тоо</h2>
+            <p>
+                Бийик тоолор адамга эркиндик сезимин берет.
+                Кыргызстандын кооз жаратылышы дүйнөгө белгилүү.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Токой</h2>
+            <p>
+                Токойлор жердин өпкөсү болуп эсептелет.
+                Алар таза абаны жана кооздукту сактайт.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Дарыя</h2>
+            <p>
+                Таза суу — жашоонун негизи.
+                Дарыялар табияттын эң маанилүү бөлүктөрүнүн бири.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="quote">
+
+    <h2>Табиятты коргойлу</h2>
+
+    <p>
+        “Эгерде адам табиятты коргосо,
+        анда табият дагы адамды коргойт.”
+    </p>
+
+</section>
+
+<footer>
+    © 2026 Природа жөнүндө HTML сайт
+</footer>
+
+</body>
+</html>
